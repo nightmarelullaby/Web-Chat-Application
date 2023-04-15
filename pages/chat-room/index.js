@@ -5,7 +5,6 @@ export const socket = io('http://localhost:3004')
 import NoChat from "@/components/NoChat/NoChat"
 import SidebarLayout from "@/components/Layouts/SidebarLayout"
 import {chatBodyState} from "@/atoms/chatBodyState"
-import Hoc from "@/components/hoc/Hoc"
 import Head from "next/head"
 import {RecoilRoot,useRecoilValue} from "recoil"
 

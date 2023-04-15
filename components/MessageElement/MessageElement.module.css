@@ -1,0 +1,33 @@
+
+.main, .mainSender{
+	color:white;
+	padding: 8px;
+		font-weight: 600;
+	letter-spacing: .9px;
+	font-size: 14px;
+	display: flex;
+	max-width: 45%;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	flex-direction: column;
+}
+.mainSender{
+	background-color: #e5e5ff;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 0px;
+}
+
+
+.main{
+	border-top-right-radius: 0px;
+	border-top-left-radius: 8px;
+	margin-left: auto;
+	background-color: #e5e5ff;
+}
+
+@media all and (max-width:420px){
+	.mainSender,.main{
+		max-width: 100%;
+		width: fit-content;
+	}
+}

@@ -1,0 +1,28 @@
+.popoverLeft,.popoverRight{
+	background-color:white;
+	border-radius:6px;
+	width:fit-content;
+	max-height:300px;
+	overflow: hidden;
+	position:absolute;
+	z-index:123123234;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.popoverLeft{
+	bottom:0;
+	right:130%;
+}
+.popoverRight{
+	bottom:0;
+	left:100%;
+}
+
+@media all and (max-width:480px){
+	.popoverRight,.popoverLeft{
+		width: calc(100vw - 30vw);
+	}
+	.fColumn{
+		flex-direction: column;
+	}
+	
+}

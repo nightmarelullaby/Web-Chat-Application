@@ -1,0 +1,27 @@
+.status{
+	width: 10px;
+	height: 10px;
+	border-radius: 1000px;
+	outline:3.5px solid white;
+	right: -1px;
+	z-index: 100000;
+	background-color: lightgreen;
+	position: absolute;
+	bottom: 0;
+}
+.popOverImg{
+	width: 32px;
+	height: 32px;
+}
+@media all and (max-width:480px){
+	.status{
+		right: 1.5px;
+		width: 16px;
+		height: 16px;
+		outline:5px solid white;
+	}
+	.popOverImg{
+	width: 88px;
+	height: 88px;
+}
+}

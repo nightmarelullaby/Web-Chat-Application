@@ -1,0 +1,60 @@
+.inputMessage{
+	background-color: transparent;
+	border:none;
+	color:black;
+	width: 100%;
+	gap:8px;
+	padding: 8px 0px 8px 16px;
+	transition: .15s ease;
+}
+
+.mainForm{
+	margin-top: auto;
+	display: flex;
+	gap:8px;
+	background-color: white;
+	border-radius: 8px;
+	margin: auto 16px 16px 16px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+.inputMessage::placeholder{
+	color:black;
+}
+.inputMessage:focus{
+	outline:none;
+	padding-left: 24px;
+}
+.emojiPicker{
+	margin-left: auto;
+
+}
+.buttonSend{
+	background-color: #7575ff;
+	display: flex;
+	align-self: center;
+	border-radius: 200px;
+	fill: white;
+	align-items: center;
+	justify-content: center;
+	margin-right: 16px;
+}
+.buttonSend,.emojiPicker{
+	cursor: pointer;
+	outline: none;
+	border:none;
+	padding: 8px 8px;
+	transition: .15s ease
+}
+.emojiPicker{background-color: transparent;}
+
+.buttonSend:hover,.emojiPicker:hover{
+	scale: 110%;
+	rotate:-10deg;
+
+}
+@media all and (max-width:400px){
+	.inputMessage{
+		padding: 16px;
+	}
+}

@@ -1,0 +1,57 @@
+.mainText{
+	position: relative;
+	z-index: 2;
+	display: inline;
+}
+.circle, .circlebg{
+	height: 1600px;
+	translate: -50% 10%;
+	border-radius: 3000px;
+	width: 1800px;
+	left: 50%;
+	top:30%;
+		z-index: -1;
+}
+.circle{
+	transform: skew(10deg);
+	position: absolute;
+	left: 50%;
+	animation: circle 20s alternate infinite;
+	background-color: #fee576;
+	opacity: .3;
+	transition: .s ease;
+/*	filter:blur(20px);*/
+
+
+}
+@keyframes circle{
+	0%{
+		rotate:0deg;
+	}
+	100%{
+		rotate:190deg;
+	}
+}
+.circlebg{
+
+	transform: skew(10deg);
+	position: absolute;
+	animation: circle 14s alternate infinite;
+	opacity: .2;
+	background-color: #fee46d;
+}
+@keyframes circle{
+	0%{
+		rotate:0deg;
+	}
+	100%{
+		rotate:190deg;
+	}
+}
+.circlebg:hover{
+	opacity: .5;
+}
+.circle:hover{
+	opacity: .3;
+}
+

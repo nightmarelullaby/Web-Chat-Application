@@ -1,0 +1,51 @@
+.main{
+	transition: .11s ease;
+	border-radius:8px;
+	position: relative;
+	background-color:white;
+	cursor: pointer;
+}
+.circle{
+	animation: circle 10s alternate infinite;
+	background-color: black;
+	opacity: .8;
+		transform: skew(-8deg);
+}
+.circlebg{
+	background-color: black;
+	opacity: .5;
+	animation: circle 16s alternate-reverse infinite;
+	transform: skew(15deg);
+}
+.circle,.circlebg{
+	height: 100px;
+
+	transition: .2s ease;
+	width:100px;
+	border-radius: 500px;
+	position: absolute;
+	z-index: 1;
+	top: 120%;
+	left:50%;
+	translate: -50% 0;
+
+}
+.main:hover .circle{
+	translate: -50% -22px;
+/*	border-radius: 0;*/	
+
+}
+.main:hover .circlebg{
+	translate: -50% -22px;
+/*	border-radius: 0;*/	
+
+}
+
+@keyframes circle{
+	0%{
+		rotate:0deg;
+	}
+	100%{
+		rotate:190deg;
+	}
+}

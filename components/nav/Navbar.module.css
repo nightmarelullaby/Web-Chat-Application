@@ -1,0 +1,16 @@
+.navbarResponsive{
+    display: none;
+    position:relative;
+    background-color: white;
+    z-index:1000;
+}
+.responsiveMenu{
+    display: none;   
+}
+@media all and (max-width:680px){
+    .responsiveMenu{
+        display: flex;   
+    }
+    .navbar{display:none;}
+    .navbarResponsive{display: block;}
+}

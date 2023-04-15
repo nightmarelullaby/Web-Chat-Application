@@ -1,0 +1,90 @@
+
+.main{
+/*box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;*/
+	border:none;
+	justify-content:space-between;
+	width: 100%;
+	background-color: transparent;
+	cursor: pointer;
+	padding:8px;
+	gap:16px;
+	transition: .15s ease;
+}
+.mainContainer{
+	position: relative;
+	margin-top:auto;
+}
+.main:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.mainTitle, .secondaryTitle{
+	color:black;
+}
+.mainTitle{
+	font-size: 14px;
+}
+.secondaryTitle{
+	font-size: 11px;
+	color:gray;
+	font-weight: 400;
+	letter-spacing:.8px;
+}
+.elementOption{
+	padding: 8px;
+	display: flex;
+	font-size: 16px;
+	gap:8px;
+	cursor: pointer;
+	border-radius: 6px;
+}
+.elementOption >*{
+	white-space: nowrap;
+}
+.elementOption > div{
+	display: flex;
+	gap:8px;
+	align-items: center;
+}
+.elementOption:hover{
+	background-color: lightgray;
+}
+.elementOption svg{
+	stroke:black;
+	width: 16px;
+	stroke-width: 1.6;
+	height: 16px;
+}
+.textOption{
+	color:rgb(53 53 25);
+	white-space: nowrap;
+}
+.userIcon{
+	width:32px;
+}
+.boxText{
+	display:flex;
+	align-items:flex-start;
+	flex-direction:column;
+}
+.dropdown{
+		bottom:0%;
+		left: 105%;
+	
+	  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@media all and (max-width:620px){
+	.dropdown{
+		width: fit-content;
+		right:-5px;
+    bottom:50px;
+	}
+	.main{
+		padding: 10px;
+		gap: 8px;
+	}
+/*	.boxText{display: none}*/
+	.userIcon{
+		width:20px;
+	stroke-width: 2;}
+	.mainContainer{margin-top: none}
+}

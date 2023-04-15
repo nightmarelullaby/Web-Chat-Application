@@ -1,0 +1,43 @@
+.buttonPrimary{
+  border-radius: 6px;
+  width: fit-content;
+  display:flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border:none;
+  height: fit-content;
+  background: none;
+  padding:8px 16px;
+  cursor:pointer;
+  transition: .15s ease;
+}
+
+.buttonPrimary:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+/*  background-color:#f1f1f1;*/
+}
+
+.buttonSecondary{
+  border-radius: 6px;
+  width: fit-content;
+  display:flex;
+  align-items: center;
+  gap: 8px;
+  border:none;
+  height: fit-content;
+  background: none;
+  padding:8px;
+  background-color: white;
+  cursor:pointer;
+  transition: .12s ease;
+}
+
+.buttonSecondary:hover{
+  outline: 1px solid white;
+  background-color: transparent;
+}
+.buttonSecondary:hover small, .buttonSecondary:hover svg{
+  color:white;
+  stroke: white;
+}

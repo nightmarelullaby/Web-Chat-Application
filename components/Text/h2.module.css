@@ -1,0 +1,10 @@
+.h2{
+    font-size:59.3px;
+    text-align:center}
+
+    @media all and (max-width:550px){
+        .h2{font-size: 30px;}
+    }
+        @media all and (max-width:350px){
+        .h2{font-size: 22.65px;}                  
+}
